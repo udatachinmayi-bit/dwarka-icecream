@@ -6,30 +6,30 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#f8fdff] via-[#eaf8ff] to-[#d9f4ff]"
     >
-      {/* Floating clear logo */}
+      {/* Floating logo */}
       <div
         className="absolute inset-0 bg-center bg-no-repeat animate-logoFloat"
         style={{
           backgroundImage: `url(${logo})`,
-          backgroundSize: '60%',
-          backgroundPosition: 'center 58%',
+          backgroundSize: 'clamp(220px, 50vw, 700px)',
+          backgroundPosition: 'center center',
           opacity: 0.9,
         }}
       ></div>
 
-      {/* Decorative premium shapes */}
-      <div className="absolute top-44 left-20 w-36 h-36 bg-cyan-200/20 rounded-full animate-float1"></div>
+      {/* Decorative shapes */}
+      <div className="absolute top-28 md:top-44 left-4 md:left-20 w-20 h-20 md:w-36 md:h-36 bg-cyan-200/20 rounded-full animate-float1"></div>
 
-      <div className="absolute bottom-32 right-24 w-48 h-48 bg-blue-200/20 rounded-full animate-float2"></div>
+      <div className="absolute bottom-24 md:bottom-32 right-4 md:right-24 w-28 h-28 md:w-48 md:h-48 bg-blue-200/20 rounded-full animate-float2"></div>
 
-      {/* very light overlay */}
+      {/* Light overlay */}
       <div className="absolute inset-0 bg-white/3"></div>
 
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
           viewBox="0 0 1440 200"
-          className="w-full h-32"
+          className="w-full h-20 md:h-32"
           preserveAspectRatio="none"
         >
           <path
