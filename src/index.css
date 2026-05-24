@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* Navbar slide animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-120px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 1s ease forwards;
+}
+
+/* Logo popup animation */
+@keyframes logoPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-logoPop {
+  animation: logoPop 0.8s ease-out 1s forwards;
+}
+
+/* Floating glow animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Reverse floating */
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+.animate-floatReverse {
+  animation: floatReverse 7s ease-in-out infinite;
+}
+
+/* Slow floating background logo */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: scale(1.2) translateY(0px);
+  }
+
+  50% {
+    transform: scale(1.25) translateY(-15px);
+  }
+}
+
+.animate-floatSlow {
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+/* Smooth hover */
+button {
+  transition: all 0.3s ease;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+/* Main logo floating */
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-logoFloat {
+  animation: logoFloat 6s ease-in-out infinite;
+}
+
+/* Left shape */
+@keyframes float1 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float1 {
+  animation: float1 5s ease-in-out infinite;
+}
+
+/* Right shape */
+@keyframes float2 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(18px);
+  }
+}
+
+.animate-float2 {
+  animation: float2 7s ease-in-out infinite;
+}
